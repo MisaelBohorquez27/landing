@@ -45,7 +45,7 @@
 						<a class="nav-link" href="index.html">Home</a>
 					</li>
 					<li><a class="nav-link" href="shop.html">Shop</a></li>
-			<!-- 	<li><a class="nav-link" href="about.html">About us</a></li>
+					<!-- 	<li><a class="nav-link" href="about.html">About us</a></li>
 					<li><a class="nav-link" href="services.html">Services</a></li>
 					<li><a class="nav-link" href="blog.html">Blog</a></li>  -->
 					<li><a class="nav-link" href="contact.html">Contact us</a></li>
@@ -70,7 +70,7 @@
 						<h1>Virtual Store <span clsas="d-block">Teclike S.A. </span></h1>
 						<p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
 							vulputate velit imperdiet dolor tempor tristique.</p>
-						<p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#"
+						<p><a href="shop.html" class="btn btn-secondary me-2">Shop Now</a><a href="#"
 								class="btn btn-white-outline">Explore</a></p>
 					</div>
 				</div>
@@ -292,12 +292,122 @@
 	</div>
 	<!-- End Popular Product -->
 
-	<!-- Start Testimonial Slider -->
+	<!-- Start Nuestros Productos -->
+	<section id="nuestros-productos">
+		<div class="container">
+			<h2>Nuestros Productos</h2>
+			<div class="galeria">
+				<div class="imagen-port">
+					<img src="images/Audifonos-caja.png" alt="ventana Cafe" title="Ventana café" />
+				</div>
+				<div class="imagen-port">
+					<img src="images/teclado-z94.jpg" alt="ventana Cafe" title="Ventana café" />
+				</div>
+				<div class="imagen-port">
+					<img src="images/teclado-keycaps1.jpg" alt="ventana Cafe" title="Ventana café" />
+				</div>
+				<div class="imagen-port">
+					<img src="images/mouse-x11(3).png" alt="ventana Cafe" title="Ventana café" />
+				</div>
+				<div class="imagen-port">
+					<img src="images/teclado-switch.jpg" alt="ventana Cafe" title="Ventana café" />
+				</div>
+				<div class="imagen-port">
+					<img src="images/teclado-keycaps-naranjas.jpg" alt="ventana Cafe" title="Ventana café" />
+				</div>
+				<div class="imagen-port">
+					<img src="images/teclado-keycaps-rojo.jpg" alt="ventana Cafe" title="Ventana café" />
+				</div>
+				<div class="imagen-port">
+					<img src="images/teclado-switch(2).jpg" alt="ventana Cafe" title="Ventana café" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- End Nuestros Productos -->
+
+	<!-- Contact Section -->
+	<div id="contact" class="container parallax">
+		<div class="col-md-4 col-md-offset-4 text-center">
+			<h1 class="main-title">Contáctanos</h1>
+			<hr>
+			<div class="divide50"></div>
+		</div>
+		<!-- Contact Inner -->
+		<div class="inner contact">
+
+			<!-- Form Area -->
+			<div class="contact-form">
+				<!-- Form -->
+				<form id="contact-form" method="post" action="#">
+					<!-- Left Inputs -->
+					<div class="col-xs-6 col-xs-12 animated" data-animation="fadeInLeft" data-animation-delay="300">
+						<!-- Name -->
+						<input id="form_name" type="text" name="name" required="required" class="form"
+							placeholder="Nombre" />
+						<!-- Email -->
+						<input id="form_email" type="email" name="mail" required="required" class="form"
+							placeholder="Correo Electrónico" />
+						<!-- Subject -->
+						<input id="form_subject" type="text" name="subject" required="required" class="form"
+							placeholder="¿En que podemos ayudarte?" />
+						<!-- Combo Box 1 -->
+						<select id="combo1" name="combo1" class="form" required="required" aria-placeholder="Ciudad">
+							<option value="male">Guayaquil</option>
+							<option value="female">Quito</option>
+							<option value="other">Cuenca</option>
+							<option value="other">Otro</option>
+						</select>
+					</div>
+					<!-- End Left Inputs -->
+					<!-- Right Inputs -->
+					<div class="col-xs-6 col-xs-12 animated" data-animation="fadeInRight" data-animation-delay="400">
+						<!-- Combo Box 2 -->
+						<select id="combo2" name="combo2" class="form" required="required">
+							<option value="">Selecciona el producto de tu interes.</option>
+							<option value="Aretes">Teclado Z-11</option>
+							<option value="Collares">Teclado Z-686</option>
+							<option value="Pulseras">Mouse X-11</option>
+							<option value="Reloj">Audifonos razer</option>
+							<option value="Pendientes">Mousepad</option>
+							<option value="Anillos">Keycaps</option>
+						</select>
+
+						<!-- Message -->
+						<textarea id="form_message" name="message" class="form textarea"
+							placeholder="Detalles Adicionales"></textarea>
+					</div>
+					<!-- End Right Inputs -->
+					<!-- Bottom Submit -->
+					<div class="relative fullwidth col-xs-12">
+						<!-- Send Button -->
+						<button type="submit" id="reservar" name="reservar" class="form-btn semibold">Reservar</button>
+					</div>
+					<!-- End Bottom Submit -->
+					<!-- Clear -->
+					<div class="clear"></div>
+				</form>
+				<!-- Your Mail Message -->
+				<div class="mail-message-area">
+					<!-- Message -->
+					<div class="alert gray-bg mail-message not-visible-message">
+						<strong>¡Gracias!</strong> Tu orden ha sido enviada.
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Start Productos mas vendidos -->
 	<div class="testimonial-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7 mx-auto text-center">
-					<h2 class="section-title">Testimonials</h2>
+					<h2 class="Products-Vendidos">Productos mas vendidos</h2>
 				</div>
 			</div>
 
@@ -318,20 +428,25 @@
 
 										<div class="testimonial-block text-center">
 											<blockquote class="mb-5">
-												<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae
-													odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-													vulputate velit imperdiet dolor tempor tristique. Pellentesque
-													habitant morbi tristique senectus et netus et malesuada fames ac
+												<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec
+													vitae
+													odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+													Aliquam
+													vulputate velit imperdiet dolor tempor tristique.
+													Pellentesque
+													habitant morbi tristique senectus et netus et malesuada
+													fames ac
 													turpis egestas. Integer convallis volutpat dui quis
 													scelerisque.&rdquo;</p>
 											</blockquote>
 
 											<div class="author-info">
 												<div class="author-pic">
-													<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+													<img src="images/teclado-keycaps1.jpg" alt="Teclado con Keycaps"
+														class="img-fluid">
 												</div>
-												<h3 class="font-weight-bold">Maria Jones</h3>
-												<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+												<h3 class="font-weight-bold">Teclado con Keycaps</h3>
+												<span class="position d-block mb-3">teclike ec</span>
 											</div>
 										</div>
 
@@ -346,20 +461,24 @@
 
 										<div class="testimonial-block text-center">
 											<blockquote class="mb-5">
-												<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae
-													odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-													vulputate velit imperdiet dolor tempor tristique. Pellentesque
-													habitant morbi tristique senectus et netus et malesuada fames ac
+												<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec
+													vitae
+													odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+													Aliquam
+													vulputate velit imperdiet dolor tempor tristique.
+													Pellentesque
+													habitant morbi tristique senectus et netus et malesuada
+													fames ac
 													turpis egestas. Integer convallis volutpat dui quis
 													scelerisque.&rdquo;</p>
 											</blockquote>
 
 											<div class="author-info">
 												<div class="author-pic">
-													<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+													<img src="images/mouse-x11(5).png" alt="Mouse" class="img-fluid">
 												</div>
-												<h3 class="font-weight-bold">Maria Jones</h3>
-												<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+												<h3 class="font-weight-bold">Mouse eyooso X-11</h3>
+												<span class="position d-block mb-3">teclike ec.</span>
 											</div>
 										</div>
 
@@ -374,20 +493,25 @@
 
 										<div class="testimonial-block text-center">
 											<blockquote class="mb-5">
-												<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae
-													odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-													vulputate velit imperdiet dolor tempor tristique. Pellentesque
-													habitant morbi tristique senectus et netus et malesuada fames ac
+												<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec
+													vitae
+													odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+													Aliquam
+													vulputate velit imperdiet dolor tempor tristique.
+													Pellentesque
+													habitant morbi tristique senectus et netus et malesuada
+													fames ac
 													turpis egestas. Integer convallis volutpat dui quis
 													scelerisque.&rdquo;</p>
 											</blockquote>
 
 											<div class="author-info">
 												<div class="author-pic">
-													<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+													<img src="images/audifonos-razer.png" alt="audifonos"
+														class="img-fluid">
 												</div>
-												<h3 class="font-weight-bold">Maria Jones</h3>
-												<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+												<h3 class="font-weight-bold">Audifonos razer</h3>
+												<span class="position d-block mb-3">teclike ec</span>
 											</div>
 										</div>
 
@@ -403,74 +527,58 @@
 			</div>
 		</div>
 	</div>
-	<!-- End Testimonial Slider -->
 
-	<!-- Start Blog Section -->
-	<div class="blog-section">
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-md-6">
-					<h2 class="section-title">Recent Blog</h2>
-				</div>
-				<div class="col-md-6 text-start text-md-end">
-					<a href="#" class="more">View All Posts</a>
-				</div>
-			</div>
+	<!-- End Contact Form Area -->
 
-			<div class="row">
+	<!-- Resultados -->
+	<div id="resultados" class="container parallax">
+		<div class="col-md-4 col-md-offset-4 text-center">
 
-				<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
-					<div class="post-entry">
-						<a href="#" class="post-thumbnail"><img src="images/post-1.jpg" alt="Image"
-								class="img-fluid"></a>
-						<div class="post-content-entry">
-							<h3><a href="#">First Time Home Owner Ideas</a></h3>
-							<div class="meta">
-								<span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 19,
-										2021</a></span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
-					<div class="post-entry">
-						<a href="#" class="post-thumbnail"><img src="images/post-2.jpg" alt="Image"
-								class="img-fluid"></a>
-						<div class="post-content-entry">
-							<h3><a href="#">How To Keep Your Furniture Clean</a></h3>
-							<div class="meta">
-								<span>by <a href="#">Robert Fox</a></span> <span>on <a href="#">Dec 15, 2021</a></span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
-					<div class="post-entry">
-						<a href="#" class="post-thumbnail"><img src="images/post-3.jpg" alt="Image"
-								class="img-fluid"></a>
-						<div class="post-content-entry">
-							<h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
-							<div class="meta">
-								<span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 12,
-										2021</a></span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
+			<h2 class="main-title">Productos reservados</h2>
+			<hr>
+			<div class="divide50"></div>
 		</div>
+		<!-- Resultados Inner -->
+		<div class="inner resultados">
+			<!-- Tabla de Resultados -->
+			<div class="resultados-form">
+				<div class="table-responsive">
+					<h5 class="text-muted">Ingrese un término para filtrar los resultados:</h5>
+					<input type="text" id="filterInput" class="form-control" placeholder="Filtrar...">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Ciudad</th>
+								<th>Producto</th>
+								<th>Estilo</th>
+								<th>Sexo</th>
+								<th>Pedidos</th>
+							</tr>
+						</thead>
+						<tbody id="tablebody">
+
+						</tbody>
+					</table>
+				</div>
+
+				<fieldset>
+					<legend><i class="fas fa-chart-pie"></i> Total</legend>
+					<div id="counts">Reservas: <span id="Reservas">0</span></div>
+				</fieldset>
+
+			</div>
+			<!-- End Tabla de Resultados -->
+		</div>
+
 	</div>
-	<!-- End Blog Section -->
+	<!-- End Resultados -->
 
 	<!-- Start Footer Section -->
 	<footer class="footer-section">
 		<div class="container relative">
 
 			<div class="sofa-img">
-				<img src="images/sofa.png" alt="Image" class="img-fluid">
+				<img src="images/audifonos-razer.png" alt="Image" class="img-fluid">
 			</div>
 
 			<div class="row">
@@ -499,9 +607,12 @@
 
 			<div class="row g-5 mb-5">
 				<div class="col-lg-4">
-					<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Furni<span>.</span></a></div>
-					<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus
-						malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+					<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Teclike<span>.</span></a>
+					</div>
+					<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl
+						dapibus
+						malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor
+						tristique.
 						Pellentesque habitant</p>
 
 					<ul class="list-unstyled custom-social">
@@ -556,7 +667,8 @@
 				<div class="row pt-4">
 					<div class="col-lg-6">
 						<p class="mb-2 text-center text-lg-start">Copyright &copy;
-							<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+							<script>document.write(new Date().getFullYear());</script>. All Rights Reserved.
+							&mdash;
 							Designed with love by <a href="https://untree.co">Untree.co</a> Distributed By <a
 								hreff="https://themewagon.com">ThemeWagon</a>
 							<!-- License information: https://untree.co/license/ -->
