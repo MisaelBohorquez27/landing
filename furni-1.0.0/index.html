@@ -346,56 +346,28 @@
 						<!-- Name -->
 						<input id="form_name" type="text" name="name" required="required" class="form"
 							placeholder="Nombre" />
+						<div id="error-name" class="error-message"></div>
 						<!-- Email -->
 						<input id="form_email" type="email" name="mail" required="required" class="form"
 							placeholder="Correo Electrónico" />
+						<div id="error-email" class="error-message"></div>
 						<!-- Subject -->
-						<input id="form_subject" type="text" name="subject" required="required" class="form"
-							placeholder="¿En que podemos ayudarte?" />
+						<input id="form_issue" type="text" name="issue" required="required" class="form"
+							placeholder="¿En qué podemos ayudarte?" />
+						<div id="error-issue" class="error-message"></div>
 						<!-- Combo Box 1 -->
-						<select id="combo1" name="combo1" class="form" required="required" aria-placeholder="Ciudad">
-							<option value="male">Guayaquil</option>
-							<option value="female">Quito</option>
-							<option value="other">Cuenca</option>
-							<option value="other">Otro</option>
+						<select id="form_city" name="city" class="form" required="required">
+							<option value="ciudad">Selecciona tu Ciudad</option>
+							<option value="guayaquil">Guayaquil</option>
+							<option value="quito">Quito</option>
+							<option value="cuenca">Cuenca</option>
+							<option value="otro">Otro</option>
 						</select>
+						<div id="error-city" class="error-message"></div>
 					</div>
 					<!-- End Left Inputs -->
-					<!-- Right Inputs -->
-					<div class="col-xs-6 col-xs-12 animated" data-animation="fadeInRight" data-animation-delay="400">
-						<!-- Combo Box 2 -->
-						<select id="combo2" name="combo2" class="form" required="required">
-							<option value="">Selecciona el producto de tu interes.</option>
-							<option value="Aretes">Teclado Z-11</option>
-							<option value="Collares">Teclado Z-686</option>
-							<option value="Pulseras">Mouse X-11</option>
-							<option value="Reloj">Audifonos razer</option>
-							<option value="Pendientes">Mousepad</option>
-							<option value="Anillos">Keycaps</option>
-						</select>
-
-						<!-- Message -->
-						<textarea id="form_message" name="message" class="form textarea"
-							placeholder="Detalles Adicionales"></textarea>
-					</div>
-					<!-- End Right Inputs -->
-					<!-- Bottom Submit -->
-					<div class="relative fullwidth col-xs-12">
-						<!-- Send Button -->
-						<button type="submit" id="reservar" name="reservar" class="form-btn semibold">Reservar</button>
-					</div>
-					<!-- End Bottom Submit -->
-					<!-- Clear -->
-					<div class="clear"></div>
+					<button type="submit">Enviar</button>
 				</form>
-				<!-- Your Mail Message -->
-				<div class="mail-message-area">
-					<!-- Message -->
-					<div class="alert gray-bg mail-message not-visible-message">
-						<strong>¡Gracias!</strong> Tu orden ha sido enviada.
-					</div>
-				</div>
-
 			</div>
 
 		</div>

@@ -570,7 +570,7 @@ a.more {
 }
 
 .imagen-port {
-  height: 24rem;
+  height: 50% auto;
   width: 24%;
   margin-bottom: 5px;
   overflow: hidden;
@@ -663,6 +663,14 @@ a.more {
   height: 200px;
   max-height: 200px;
   max-width: 100%;
+}
+
+/* Error message */
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
 }
 
 /* Generic Button Styles */
