@@ -353,320 +353,353 @@
 						<div id="error-email" class="error-message"></div>
 						<!-- Subject -->
 						<input id="form_issue" type="text" name="issue" required="required" class="form"
-							placeholder="¿En qué podemos ayudarte?" />
+							placeholder="¿En que podemos ayudarte?" />
 						<div id="error-issue" class="error-message"></div>
 						<!-- Combo Box 1 -->
-						<select id="form_city" name="city" class="form" required="required">
-							<option value="ciudad">Selecciona tu Ciudad</option>
+						<select id="form_ciudad" name="ciudad" class="form" required="required">
+							<option value="">Selecciona tu Ciudad</option>
 							<option value="guayaquil">Guayaquil</option>
 							<option value="quito">Quito</option>
 							<option value="cuenca">Cuenca</option>
 							<option value="otro">Otro</option>
 						</select>
-						<div id="error-city" class="error-message"></div>
+						<div id="error-ciudad" class="error-message"></div>
 					</div>
 					<!-- End Left Inputs -->
-					<button type="submit">Enviar</button>
+					<!-- Right Inputs -->
+					<div class="col-xs-6 col-xs-12 animated" data-animation="fadeInRight" data-animation-delay="400">
+						<!-- Combo Box 2 -->
+						<select id="combo2" name="combo2" class="form" required="required">
+							<option value="">Selecciona el producto de tu interes.</option>
+							<option value="Teclado Z-11">Teclado Z-11</option>
+							<option value="Teclado Z-686">Teclado Z-686</option>
+							<option value="Mouse X-11">Mouse X-11</option>
+							<option value="Audifonos razer">Audifonos razer</option>
+							<option value="Mousepad">Mousepad</option>
+							<option value="Keycaps">Keycaps</option>
+						</select>
+						<div id="error-combo2" class="error-message"></div>
+						<!-- Message -->
+						<textarea id="form_message" name="message" class="form textarea"
+							placeholder="Detalles Adicionales"></textarea>
+						<div id="error-message" class="error-message"></div>
+					</div>
+					<!-- End Right Inputs -->
+					<!-- Bottom Submit -->
+					<div class="relative fullwidth col-xs-12">
+						<!-- Send Button -->
+						<button type="submit" id="reservar" name="reservar" class="form-btn semibold">Reservar</button>
+					</div>
+					<!-- End Bottom Submit -->
+					<!-- Clear -->
+					<div class="clear"></div>
 				</form>
-			</div>
-
-		</div>
-
-	</div>
-
-	<!-- Start Productos mas vendidos -->
-	<div class="testimonial-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-7 mx-auto text-center">
-					<h2 class="Products-Vendidos">Productos mas vendidos</h2>
+				<!-- Your Mail Message -->
+				<div class="mail-message-area">
+					<!-- Message -->
+					<div class="alert gray-bg mail-message not-visible-message">
+						<strong>¡Gracias!</strong> Tu orden ha sido enviada.
+					</div>
 				</div>
 			</div>
 
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="testimonial-slider-wrap text-center">
-
-						<div id="testimonial-nav">
-							<span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
-							<span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+			<!-- Start Productos mas vendidos -->
+			<div class="testimonial-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7 mx-auto text-center">
+							<h2 class="Products-Vendidos">Productos mas vendidos</h2>
 						</div>
+					</div>
 
-						<div class="testimonial-slider">
+					<div class="row justify-content-center">
+						<div class="col-lg-12">
+							<div class="testimonial-slider-wrap text-center">
 
-							<div class="item">
-								<div class="row justify-content-center">
-									<div class="col-lg-8 mx-auto">
+								<div id="testimonial-nav">
+									<span class="prev" data-controls="prev"><span
+											class="fa fa-chevron-left"></span></span>
+									<span class="next" data-controls="next"><span
+											class="fa fa-chevron-right"></span></span>
+								</div>
 
-										<div class="testimonial-block text-center">
-											<blockquote class="mb-5">
-												<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec
-													vitae
-													odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
-													Aliquam
-													vulputate velit imperdiet dolor tempor tristique.
-													Pellentesque
-													habitant morbi tristique senectus et netus et malesuada
-													fames ac
-													turpis egestas. Integer convallis volutpat dui quis
-													scelerisque.&rdquo;</p>
-											</blockquote>
+								<div class="testimonial-slider">
 
-											<div class="author-info">
-												<div class="author-pic">
-													<img src="images/teclado-keycaps1.jpg" alt="Teclado con Keycaps"
-														class="img-fluid">
+									<div class="item">
+										<div class="row justify-content-center">
+											<div class="col-lg-8 mx-auto">
+
+												<div class="testimonial-block text-center">
+													<blockquote class="mb-5">
+														<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec
+															vitae
+															odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+															Aliquam
+															vulputate velit imperdiet dolor tempor tristique.
+															Pellentesque
+															habitant morbi tristique senectus et netus et malesuada
+															fames ac
+															turpis egestas. Integer convallis volutpat dui quis
+															scelerisque.&rdquo;</p>
+													</blockquote>
+
+													<div class="author-info">
+														<div class="author-pic">
+															<img src="images/teclado-keycaps1.jpg"
+																alt="Teclado con Keycaps" class="img-fluid">
+														</div>
+														<h3 class="font-weight-bold">Teclado con Keycaps</h3>
+														<span class="position d-block mb-3">teclike ec</span>
+													</div>
 												</div>
-												<h3 class="font-weight-bold">Teclado con Keycaps</h3>
-												<span class="position d-block mb-3">teclike ec</span>
+
 											</div>
 										</div>
-
 									</div>
-								</div>
-							</div>
-							<!-- END item -->
+									<!-- END item -->
 
-							<div class="item">
-								<div class="row justify-content-center">
-									<div class="col-lg-8 mx-auto">
+									<div class="item">
+										<div class="row justify-content-center">
+											<div class="col-lg-8 mx-auto">
 
-										<div class="testimonial-block text-center">
-											<blockquote class="mb-5">
-												<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec
-													vitae
-													odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
-													Aliquam
-													vulputate velit imperdiet dolor tempor tristique.
-													Pellentesque
-													habitant morbi tristique senectus et netus et malesuada
-													fames ac
-													turpis egestas. Integer convallis volutpat dui quis
-													scelerisque.&rdquo;</p>
-											</blockquote>
+												<div class="testimonial-block text-center">
+													<blockquote class="mb-5">
+														<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec
+															vitae
+															odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+															Aliquam
+															vulputate velit imperdiet dolor tempor tristique.
+															Pellentesque
+															habitant morbi tristique senectus et netus et malesuada
+															fames ac
+															turpis egestas. Integer convallis volutpat dui quis
+															scelerisque.&rdquo;</p>
+													</blockquote>
 
-											<div class="author-info">
-												<div class="author-pic">
-													<img src="images/mouse-x11(5).png" alt="Mouse" class="img-fluid">
+													<div class="author-info">
+														<div class="author-pic">
+															<img src="images/mouse-x11(5).png" alt="Mouse"
+																class="img-fluid">
+														</div>
+														<h3 class="font-weight-bold">Mouse eyooso X-11</h3>
+														<span class="position d-block mb-3">teclike ec.</span>
+													</div>
 												</div>
-												<h3 class="font-weight-bold">Mouse eyooso X-11</h3>
-												<span class="position d-block mb-3">teclike ec.</span>
+
 											</div>
 										</div>
-
 									</div>
-								</div>
-							</div>
-							<!-- END item -->
+									<!-- END item -->
 
-							<div class="item">
-								<div class="row justify-content-center">
-									<div class="col-lg-8 mx-auto">
+									<div class="item">
+										<div class="row justify-content-center">
+											<div class="col-lg-8 mx-auto">
 
-										<div class="testimonial-block text-center">
-											<blockquote class="mb-5">
-												<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec
-													vitae
-													odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
-													Aliquam
-													vulputate velit imperdiet dolor tempor tristique.
-													Pellentesque
-													habitant morbi tristique senectus et netus et malesuada
-													fames ac
-													turpis egestas. Integer convallis volutpat dui quis
-													scelerisque.&rdquo;</p>
-											</blockquote>
+												<div class="testimonial-block text-center">
+													<blockquote class="mb-5">
+														<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec
+															vitae
+															odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+															Aliquam
+															vulputate velit imperdiet dolor tempor tristique.
+															Pellentesque
+															habitant morbi tristique senectus et netus et malesuada
+															fames ac
+															turpis egestas. Integer convallis volutpat dui quis
+															scelerisque.&rdquo;</p>
+													</blockquote>
 
-											<div class="author-info">
-												<div class="author-pic">
-													<img src="images/audifonos-razer.png" alt="audifonos"
-														class="img-fluid">
+													<div class="author-info">
+														<div class="author-pic">
+															<img src="images/audifonos-razer.png" alt="audifonos"
+																class="img-fluid">
+														</div>
+														<h3 class="font-weight-bold">Audifonos razer</h3>
+														<span class="position d-block mb-3">teclike ec</span>
+													</div>
 												</div>
-												<h3 class="font-weight-bold">Audifonos razer</h3>
-												<span class="position d-block mb-3">teclike ec</span>
+
 											</div>
 										</div>
-
 									</div>
+									<!-- END item -->
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- End Contact Form Area -->
+
+			<!-- Resultados -->
+			<div id="resultados" class="container parallax">
+				<div class="col-md-4 col-md-offset-4 text-center">
+
+					<h2 class="main-title">Productos reservados</h2>
+					<hr>
+					<div class="divide50"></div>
+				</div>
+				<!-- Resultados Inner -->
+				<div class="inner resultados">
+					<!-- Tabla de Resultados -->
+					<div class="resultados-form">
+						<div class="table-responsive">
+							<h5 class="text-muted">Ingrese un término para filtrar los resultados:</h5>
+							<input type="text" id="filterInput" class="form-control" placeholder="Filtrar...">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>Ciudad</th>
+										<th>Producto</th>
+										<th>Estilo</th>
+										<th>Sexo</th>
+										<th>Pedidos</th>
+									</tr>
+								</thead>
+								<tbody id="tablebody">
+
+								</tbody>
+							</table>
+						</div>
+
+						<fieldset>
+							<legend><i class="fas fa-chart-pie"></i> Total</legend>
+							<div id="counts">Reservas: <span id="Reservas">0</span></div>
+						</fieldset>
+
+					</div>
+					<!-- End Tabla de Resultados -->
+				</div>
+
+			</div>
+			<!-- End Resultados -->
+
+			<!-- Start Footer Section -->
+			<footer class="footer-section">
+				<div class="container relative">
+
+					<div class="sofa-img">
+						<img src="images/audifonos-razer.png" alt="Image" class="img-fluid">
+					</div>
+
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="subscription-form">
+								<h3 class="d-flex align-items-center"><span class="me-1"><img
+											src="images/envelope-outline.svg" alt="Image"
+											class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
+
+								<form action="#" class="row g-3">
+									<div class="col-auto">
+										<input type="text" class="form-control" placeholder="Enter your name">
+									</div>
+									<div class="col-auto">
+										<input type="email" class="form-control" placeholder="Enter your email">
+									</div>
+									<div class="col-auto">
+										<button class="btn btn-primary">
+											<span class="fa fa-paper-plane"></span>
+										</button>
+									</div>
+								</form>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="row g-5 mb-5">
+						<div class="col-lg-4">
+							<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Teclike<span>.</span></a>
+							</div>
+							<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl
+								dapibus
+								malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor
+								tristique.
+								Pellentesque habitant</p>
+
+							<ul class="list-unstyled custom-social">
+								<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+								<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+								<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+								<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+							</ul>
+						</div>
+
+						<div class="col-lg-8">
+							<div class="row links-wrap">
+								<div class="col-6 col-sm-6 col-md-3">
+									<ul class="list-unstyled">
+										<li><a href="#">About us</a></li>
+										<li><a href="#">Services</a></li>
+										<li><a href="#">Blog</a></li>
+										<li><a href="#">Contact us</a></li>
+									</ul>
+								</div>
+
+								<div class="col-6 col-sm-6 col-md-3">
+									<ul class="list-unstyled">
+										<li><a href="#">Support</a></li>
+										<li><a href="#">Knowledge base</a></li>
+										<li><a href="#">Live chat</a></li>
+									</ul>
+								</div>
+
+								<div class="col-6 col-sm-6 col-md-3">
+									<ul class="list-unstyled">
+										<li><a href="#">Jobs</a></li>
+										<li><a href="#">Our team</a></li>
+										<li><a href="#">Leadership</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+									</ul>
+								</div>
+
+								<div class="col-6 col-sm-6 col-md-3">
+									<ul class="list-unstyled">
+										<li><a href="#">Nordic Chair</a></li>
+										<li><a href="#">Kruzo Aero</a></li>
+										<li><a href="#">Ergonomic Chair</a></li>
+									</ul>
 								</div>
 							</div>
-							<!-- END item -->
-
 						</div>
 
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<!-- End Contact Form Area -->
-
-	<!-- Resultados -->
-	<div id="resultados" class="container parallax">
-		<div class="col-md-4 col-md-offset-4 text-center">
-
-			<h2 class="main-title">Productos reservados</h2>
-			<hr>
-			<div class="divide50"></div>
-		</div>
-		<!-- Resultados Inner -->
-		<div class="inner resultados">
-			<!-- Tabla de Resultados -->
-			<div class="resultados-form">
-				<div class="table-responsive">
-					<h5 class="text-muted">Ingrese un término para filtrar los resultados:</h5>
-					<input type="text" id="filterInput" class="form-control" placeholder="Filtrar...">
-					<table class="table table-bordered">
-						<thead>
-							<tr>
-								<th>Ciudad</th>
-								<th>Producto</th>
-								<th>Estilo</th>
-								<th>Sexo</th>
-								<th>Pedidos</th>
-							</tr>
-						</thead>
-						<tbody id="tablebody">
-
-						</tbody>
-					</table>
-				</div>
-
-				<fieldset>
-					<legend><i class="fas fa-chart-pie"></i> Total</legend>
-					<div id="counts">Reservas: <span id="Reservas">0</span></div>
-				</fieldset>
-
-			</div>
-			<!-- End Tabla de Resultados -->
-		</div>
-
-	</div>
-	<!-- End Resultados -->
-
-	<!-- Start Footer Section -->
-	<footer class="footer-section">
-		<div class="container relative">
-
-			<div class="sofa-img">
-				<img src="images/audifonos-razer.png" alt="Image" class="img-fluid">
-			</div>
-
-			<div class="row">
-				<div class="col-lg-8">
-					<div class="subscription-form">
-						<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg"
-									alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
-
-						<form action="#" class="row g-3">
-							<div class="col-auto">
-								<input type="text" class="form-control" placeholder="Enter your name">
+					<div class="border-top copyright">
+						<div class="row pt-4">
+							<div class="col-lg-6">
+								<p class="mb-2 text-center text-lg-start">Copyright &copy;
+									<script>document.write(new Date().getFullYear());</script>. All Rights Reserved.
+									&mdash;
+									Designed with love by <a href="https://untree.co">Untree.co</a> Distributed By <a
+										hreff="https://themewagon.com">ThemeWagon</a>
+									<!-- License information: https://untree.co/license/ -->
+								</p>
 							</div>
-							<div class="col-auto">
-								<input type="email" class="form-control" placeholder="Enter your email">
+
+							<div class="col-lg-6 text-center text-lg-end">
+								<ul class="list-unstyled d-inline-flex ms-auto">
+									<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+								</ul>
 							</div>
-							<div class="col-auto">
-								<button class="btn btn-primary">
-									<span class="fa fa-paper-plane"></span>
-								</button>
-							</div>
-						</form>
 
-					</div>
-				</div>
-			</div>
-
-			<div class="row g-5 mb-5">
-				<div class="col-lg-4">
-					<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Teclike<span>.</span></a>
-					</div>
-					<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl
-						dapibus
-						malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor
-						tristique.
-						Pellentesque habitant</p>
-
-					<ul class="list-unstyled custom-social">
-						<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-						<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
-						<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
-						<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
-					</ul>
-				</div>
-
-				<div class="col-lg-8">
-					<div class="row links-wrap">
-						<div class="col-6 col-sm-6 col-md-3">
-							<ul class="list-unstyled">
-								<li><a href="#">About us</a></li>
-								<li><a href="#">Services</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">Contact us</a></li>
-							</ul>
 						</div>
-
-						<div class="col-6 col-sm-6 col-md-3">
-							<ul class="list-unstyled">
-								<li><a href="#">Support</a></li>
-								<li><a href="#">Knowledge base</a></li>
-								<li><a href="#">Live chat</a></li>
-							</ul>
-						</div>
-
-						<div class="col-6 col-sm-6 col-md-3">
-							<ul class="list-unstyled">
-								<li><a href="#">Jobs</a></li>
-								<li><a href="#">Our team</a></li>
-								<li><a href="#">Leadership</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-							</ul>
-						</div>
-
-						<div class="col-6 col-sm-6 col-md-3">
-							<ul class="list-unstyled">
-								<li><a href="#">Nordic Chair</a></li>
-								<li><a href="#">Kruzo Aero</a></li>
-								<li><a href="#">Ergonomic Chair</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-			<div class="border-top copyright">
-				<div class="row pt-4">
-					<div class="col-lg-6">
-						<p class="mb-2 text-center text-lg-start">Copyright &copy;
-							<script>document.write(new Date().getFullYear());</script>. All Rights Reserved.
-							&mdash;
-							Designed with love by <a href="https://untree.co">Untree.co</a> Distributed By <a
-								hreff="https://themewagon.com">ThemeWagon</a>
-							<!-- License information: https://untree.co/license/ -->
-						</p>
-					</div>
-
-					<div class="col-lg-6 text-center text-lg-end">
-						<ul class="list-unstyled d-inline-flex ms-auto">
-							<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
-							<li><a href="#">Privacy Policy</a></li>
-						</ul>
 					</div>
 
 				</div>
-			</div>
-
-		</div>
-	</footer>
-	<!-- End Footer Section -->
+			</footer>
+			<!-- End Footer Section -->
 
 
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/tiny-slider.js"></script>
-	<script src="js/custom.js"></script>
-	<!-- Agregando la etiqueta script con la ruta del archivo-->
-	<script src="js/main.js" defer></script>
+			<script src="js/bootstrap.bundle.min.js"></script>
+			<script src="js/tiny-slider.js"></script>
+			<script src="js/custom.js"></script>
+			<!-- Agregando la etiqueta script con la ruta del archivo-->
+			<script src="js/main.js" defer></script>
 </body>
 
 </html>
