@@ -1,102 +1,105 @@
-let loaded = (eventLoaded) => {
+function validateForm() {
+    let formName = document.getElementById('form_name');
+    let formEmail = document.getElementById('form_email');
+    let formIssue = document.getElementById('form_issue');
+    let formCiudad = document.getElementById('form_ciudad');
+    let combo2 = document.getElementById('combo2');
+    let formMessage = document.getElementById('form_message');
 
-    let myform = document.getElementById("contact-form");
+    let valid = true;
 
-    myform.addEventListener("submit", (eventSubmit) => {
+    // Limpiar mensajes de error
+    document.getElementById('error-name').textContent = '';
+    document.getElementById('error-email').textContent = '';
+    document.getElementById('error-issue').textContent = '';
+    document.getElementById('error-ciudad').textContent = '';
+    document.getElementById('error-combo2').textContent = '';
+    document.getElementById('error-message').textContent = '';
 
-        eventSubmit.preventDefault();
+    if (formName.value.trim() === '') {
+        document.getElementById('error-name').textContent = 'Ingrese un nombre válido';
+        valid = false;
+    }
 
-        let nameValue = document.getElementById('form_name').value;
-        let emailValue = document.getElementById('form_email').value;
-        let issueValue = document.getElementById('form_issue').value;
-        let ciudadValue = document.getElementById('form_ciudad').value;
-        let combo2Value = document.getElementById('combo2').value;
-        let messageValue = document.getElementById('form_message').value;
+    if (formEmail.value.trim() === '' || !isValidEmail(formEmail.value)) {
+        document.getElementById('error-email').textContent = 'Ingrese un email válido';
+        valid = false;
+    }
 
-        let valid = true;
+    if (formIssue.value.trim() === '') {
+        document.getElementById('error-issue').textContent = 'Describa el problema';
+        valid = false;
+    }
 
-        // Limpiar mensajes de error
-        document.getElementById('error-name').textContent = '';
-        document.getElementById('error-email').textContent = '';
-        document.getElementById('error-issue').textContent = '';
-        document.getElementById('error-combo1').textContent = '';
-        document.getElementById('error-combo2').textContent = '';
-        document.getElementById('error-message').textContent = '';
+    if (formCiudad.value.trim() === '') {
+        document.getElementById('error-ciudad').textContent = 'Seleccione una ciudad';
+        valid = false;
+    }
 
-        // Validación del input nombre
-        if (nameValue.length === 0) {
-            document.getElementById('error-name').textContent = 'Ingrese un nombre válido';
-            valid = false;
+    if (combo2.value.trim() === '') {
+        document.getElementById('error-combo2').textContent = 'Seleccione un producto';
+        valid = false;
+    }
+
+    if (formMessage.value.trim() === '') {
+        document.getElementById('error-message').textContent = 'Ingrese detalles adicionales';
+        valid = false;
+    }
+
+    return valid;
+}
+
+function isValidEmail(email) {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+}
+
+function submitForm(eventSubmit) {
+    eventSubmit.preventDefault();
+
+    if (!validateForm()) {
+        return;
+    }
+
+    let formData = {
+        name: document.getElementById('form_name').value,
+        email: document.getElementById('form_email').value,
+        issue: document.getElementById('form_issue').value,
+        city: document.getElementById('form_ciudad').value,
+        product: document.getElementById('combo2').value,
+        message: document.getElementById('form_message').value
+    };
+
+    let firebaseUrl = 'https://landingdatabase-default-rtdb.firebaseio.com/Collection.json';
+
+    fetch(firebaseUrl, {
+        method: 'POST',
+        body: JSON.stringify(formData),
+        headers: {
+            'Content-Type': 'application/json'
         }
-
-        // Validación del input email
-        if (emailValue.length === 0) {
-            document.getElementById('error-email').textContent = 'Ingrese un email válido';
-            valid = false;
-        } else if (!emailValue.includes('@')) {
-            document.getElementById('error-email').textContent = 'Ingrese un email con un formato válido';
-            valid = false;
-        }
-
-        // Validación del input issue
-        if (issueValue.length === 0) {
-            document.getElementById('error-issue').textContent = 'Describa el problema';
-            valid = false;
-        }
-
-        // Validación del combo box 1
-        if (combo1Value === '') {
-            document.getElementById('error-ciudad').textContent = 'Seleccione una ciudad';
-            valid = false;
-        }
-
-        // Validación del combo box 2
-        if (combo2Value === '') {
-            document.getElementById('error-combo2').textContent = 'Seleccione un producto';
-            valid = false;
-        }
-
-        // Validación del mensaje
-        if (messageValue.length === 0) {
-            document.getElementById('error-message').textContent = 'Ingrese detalles adicionales';
-            valid = false;
-        }
-
-        // Si todas las validaciones son correctas, se puede enviar el formulario
-        if (valid) {
-
-            alert("Formulario enviado exitosamente!");
-
-            const datos = {
-                name: nameValue,
-                email: emailValue,
-                issue: issueValue,
-                city: ciudadValue,
-                product: combo2Value,
-                message: messageValue
-            };
-    
-            fetch('https://landingdatabase-default-rtdb.firebaseio.com/Collection.json', {
-                method: 'POST',
-                body: JSON.stringify(datos),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-            .then(respuesta => respuesta.json())
-            .then(datos => {
-                console.log(datos); // Imprimir la respuesta del servidor
-                alert("Formulario enviado exitosamente!");
-                // Restablecer el formulario
-                myform.reset();
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert("Hubo un error al enviar el formulario.");
-            });
-        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        alert('Formulario enviado exitosamente');
+        document.getElementById('contact-form').reset();
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        alert('Hubo un error al enviar el formulario');
     });
+}
 
-};
+function loaded(eventLoaded) {
+    console.log(eventLoaded);
+
+    let myform = document.getElementById('contact-form');
+    if (myform) {
+        myform.addEventListener('submit', submitForm);
+    } else {
+        console.error('El formulario con id "contact-form" no se encontró en el DOM');
+    }
+}
 
 window.addEventListener("DOMContentLoaded", loaded);
