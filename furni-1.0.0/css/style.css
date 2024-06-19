@@ -848,6 +848,11 @@ button.form-btn.semibold {
   background-color: #3b5d50;
 }
 
+#resultados{
+  padding: 3rem;
+  margin: 0 1em 7em auto;
+}
+
 
 .before-footer-section {
   padding: 7rem 0 12rem 0 !important;
